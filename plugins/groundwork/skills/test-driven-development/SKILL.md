@@ -87,9 +87,13 @@ These are the bugs that separate code that works in a demo from code that surviv
 
 Run the tests again. The task's tests should now all pass. If a test outside this task's scope starts failing, stop and look into it before continuing — that's a regression, not something to work around.
 
+If the task's own tests are still failing, don't just keep patching and re-running on a hunch — read the failure and diagnose why before changing anything else. Give yourself at most 2-3 diagnosed attempts at a fix. If it's still red after that, stop and report to the user what's failing and what you've ruled out, rather than continuing to guess — repeated blind attempts are a sign the implementation approach or the test itself needs a second pair of eyes, not more iterations.
+
 ## Step 7 — Refactor
 
 With tests green, clean up naming, duplication, or structure as needed. Re-run the tests after each small change to make sure they stay green throughout — refactoring should never require touching the tests themselves, since the observable behavior isn't changing.
+
+If a refactor step turns a test red, don't iterate on it trying to force it back to green — revert that specific change immediately, since you know it was working before. Only re-attempt the refactor once you understand why it broke the test; if it's not obvious why, leave the code as it was and move on rather than looping on it.
 
 ## Between tasks
 
