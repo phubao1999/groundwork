@@ -15,7 +15,7 @@ Five skills, chained together:
 ```bash
 # one-time per machine
 /plugin marketplace add git@github.com:phamtrungdungdhsp/groundwork.git
-/plugin install groundwork@dung-dev-kit-marketplace
+/plugin install groundwork@groundwork
 ```
 
 ## Update after editing a skill
@@ -23,7 +23,7 @@ Five skills, chained together:
 Push your changes to the git remote, then on each machine:
 
 ```bash
-/plugin marketplace update dung-dev-kit-marketplace
+/plugin marketplace update groundwork
 /plugin update groundwork
 ```
 
