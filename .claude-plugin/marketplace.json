@@ -1,0 +1,15 @@
+{
+  "name": "dung-dev-kit-marketplace",
+  "owner": {
+    "name": "Dũng"
+  },
+  "description": "Personal Claude Code development skill kit — discovery, planning, TDD, and clean architecture guidance, built to replace the superpowers plugin.",
+  "plugins": [
+    {
+      "name": "groundwork",
+      "source": "./plugins/groundwork",
+      "description": "Discovery -> writing-plans -> writing-test-plan -> test-driven-development workflow for programming, entry point feature-development",
+      "version": "0.1.0"
+    }
+  ]
+}
