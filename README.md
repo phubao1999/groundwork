@@ -14,11 +14,9 @@ Five skills, chained together:
 
 ```bash
 # one-time per machine
-/plugin marketplace add <your-git-remote-url-or-owner/repo>
+/plugin marketplace add git@github.com:phamtrungdungdhsp/groundwork.git
 /plugin install groundwork@dung-dev-kit-marketplace
 ```
-
-Replace `<your-git-remote-url-or-owner/repo>` with wherever you push this repo (e.g. a GitHub repo like `yourname/dev-kit`).
 
 ## Update after editing a skill
 
